@@ -4,7 +4,7 @@
   "description": "Made By: Julián David Rojas Archila",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon backend/app.js",
+    "start": "nodemon backend/src/app.js",
     "dev": "node backend/src/app.js"
   },
   "repository": {

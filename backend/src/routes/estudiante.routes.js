@@ -1,9 +1,10 @@
 //Importamos Express
 const express = require('express');
 //Importamos Router
-const router = express.Router();
+const app = express.Router();
 //Define the home page route
-router.get('/', function(request, response) {
-    response.send("Home Page");
-})
-export default router;
+app.get('/', function(request, response) {
+    //response.send("Home Page");
+    response.json({"Message" : "Hello World"});
+});
+module.exports = app;
