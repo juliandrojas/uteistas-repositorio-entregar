@@ -1,9 +1,9 @@
-import { Express, Router } from "express";
-//Guardamos en una variable la inicialización del módulo Express
-const express = Express();
-//Guardamos en una variable la inicialización del módulo Router
-const router = Router();
-router.get('/', function() {
-    console.log("Archivo estudiante.routes.js funcionando");
+//Importamos Express
+const express = require('express');
+//Importamos Router
+const router = express.Router();
+//Define the home page route
+router.get('/', function(request, response) {
+    response.send("Home Page");
 })
 export default router;
