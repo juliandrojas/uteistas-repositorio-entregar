@@ -8,3 +8,7 @@ const server = express();
 server.listen(3000, function() {
     console.log("Server on port 3000".yellow);
 })
+//Requerimos módulo router
+var router = require('./src/routes/estudiante.routes');
+//Creamos ruta
+app.use('/', router);
